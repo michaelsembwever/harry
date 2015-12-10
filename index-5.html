@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>Privacy Policy</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
@@ -12,20 +12,9 @@
 <script src="js/script.js"></script>
 <script src="js/FF-cash.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/slides.min.jquery.js"></script>
 <script src="js/jquery.responsivemenu.js"></script>
 <script>
 $(function(){
-	$('#slides').slides({
-	effect: 'fade',
-	fadeSpeed:700,
-	preload: false,
-	play: 5000,
-	pause: 5000,
-	hoverPause: true,
-	crossfade: true,
-	bigTarget: true
-	});
 	$('.lightbox-image').prettyPhoto({theme:'facebook',autoplay_slideshow:false,social_tools:false,animation_speed:'normal'}).append('<span></span>');
 	if($.browser.msie&&parseInt($.browser.version,10)<=8){$('.lightbox-image').find('span').css({opacity:.5})};
 	$('.tooltips li a').find('strong').append('<span></span>').each(
@@ -73,7 +62,7 @@ $(function(){
 			<h1 class="fleft"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
 			<div id="main-menu">
 				<ul class="sf-menu fright responsive-menu">
-					<li class="current"><a href="index.html">home</a></li>
+					<li><a href="index.html">home</a></li>
 					<li><a href="index-1.html">about<span class="arrow"></span></a><ul>
 							<li><a href="#">My Biography</a></li>
 							<li><a href="#">Political career<span class="arrow"></span></a><ul>
@@ -96,66 +85,35 @@ $(function(){
 		<div class="clear"></div>
 	</div>
 </header>
-<div id="slides">
-	<div class="slides_container">
-		<div class=""><a href="#"><img src="images/slide1.jpg" alt=""></a></div>
-		<div class=""><a href="#"><img src="images/slide2.jpg" alt=""></a></div>
-		<div class=""><a href="#"><img src="images/slide3.jpg" alt=""></a></div>
+<div class="container_12">
+	<div class="wrapper">
+		<div class="grid_12"><img src="images/2page_img1.jpg" alt="" class="img"></div>
 	</div>
 </div>
 <div class=" container_12">
 	<div class="wrapper">
 		<div class="grid_12">
-			<div class="text1">The Better Man for a Better America</div>
+			<div class="text1 pad">The Better Man for a Better America</div>
 		</div>
 	</div>
 </div>
 <!-- content -->
-<section id="content">  
+<section id="content" class="padcontent3">  
 	<div class="container_12">
-		<div class="wrapper">
-			<div class="grid_4 padbot2">
-				<h2>Children</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img1.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-			<div class="grid_4 padbot2">
-				<h2>Economy</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img2.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-			<div class="grid_4 padbot2">
-				<h2>Army</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img3.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a loremaecena</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-		</div>
-		<div class="wrapper"><div class="grid_12"><h2>Latest News</h2></div></div>
-		<div class="wrapper">
-			<div class="grid_4">
-				<ul class="list-1">
-					<li><a href="#">Lorem ipsum dolor sit amet consec</a></li>
-					<li><a href="#">Cum sociis natoque penatibus et magnis dis 
-parturient montes</a></li>
-					<li><a href="#">Osum dolor sit amet, consec tetuer</a></li>
-					<li><a href="#">Lorem ipsum dolor sit amet, consec tetuer</a></li>
-				</ul>
-				<a href="#" class="link1">all news</a>
-			</div>
-			<div class="grid_3 padtop3">
-				<div class="box-img2"><a href="images/image-blank.png" data-gal="prettyPhoto" title="" class="lightbox-image"><img src="images/1page_img4.jpg" alt=""></a></div>
-			</div>
-			<div class="grid_5 padtop3 box-right">
-				<strong class="text2">Lorem ipsum dolor sit amet consec</strong>
-				<p class="text3 padtop4">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy</p> 
-				<p class="text3">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-		</div>
-	</div>
+      	<div class="wrapper">
+          	<div class="grid_10">
+            	<h2 class="padbot34">Privacy Policy</h2>
+				<p><strong>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.</strong>
+Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris.</p>
+<p><strong>Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</strong> 
+Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem.</p> 
+<p><strong>Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer.</strong> 
+Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<a href="#">privacy@demolink.org</a>
+
+            </div>
+        </div>
+    </div>
 </section>
 <!-- footer -->
 <footer>
@@ -178,8 +136,9 @@ parturient montes</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="z2"><div class="grid_3"><div class="copyright">&copy; 2012 <a href="index-5.html">Privacy Policy</a><br> More <a rel="nofollow" href="http://www.templatemonster.com/category/political-candidate-website-templates/" target="_blank">Political Candidate Website Templates at TemplateMonster.com</a></div></div><div class="clear"></div></div>
+		<div class="z2"><div class="grid_3"><div class="copyright">&copy; 2012 <a href="index-5.html">Privacy Policy</a></div></div><div class="clear"></div></div>
 	</div>
-</footer>     
+</footer> 
+<!-- Coded by Ariadna -->    
 </body>
 </html>

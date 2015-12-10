@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
+<title>Contacts</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0">
 <link rel="stylesheet" href="css/style.css">
@@ -10,22 +10,16 @@
 <script src="js/superfish.js"></script>
 <script src="js/hoverIntent.js"></script>
 <script src="js/script.js"></script>
-<script src="js/FF-cash.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/slides.min.jquery.js"></script>
-<script src="js/jquery.responsivemenu.js"></script>
+<script src="js/FF-cash.js"></script>
+<script src="js/forms.js" type="text/javascript"></script>
 <script>
 $(function(){
-	$('#slides').slides({
-	effect: 'fade',
-	fadeSpeed:700,
-	preload: false,
-	play: 5000,
-	pause: 5000,
-	hoverPause: true,
-	crossfade: true,
-	bigTarget: true
-	});
+   $('#contact-form').forms({
+	 ownerEmail:'#'
+	 })
+})
+$(function(){
 	$('.lightbox-image').prettyPhoto({theme:'facebook',autoplay_slideshow:false,social_tools:false,animation_speed:'normal'}).append('<span></span>');
 	if($.browser.msie&&parseInt($.browser.version,10)<=8){$('.lightbox-image').find('span').css({opacity:.5})};
 	$('.tooltips li a').find('strong').append('<span></span>').each(
@@ -73,7 +67,7 @@ $(function(){
 			<h1 class="fleft"><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
 			<div id="main-menu">
 				<ul class="sf-menu fright responsive-menu">
-					<li class="current"><a href="index.html">home</a></li>
+					<li><a href="index.html">home</a></li>
 					<li><a href="index-1.html">about<span class="arrow"></span></a><ul>
 							<li><a href="#">My Biography</a></li>
 							<li><a href="#">Political career<span class="arrow"></span></a><ul>
@@ -87,7 +81,7 @@ $(function(){
 					</li>
 					<li><a href="index-2.html">newsroom</a></li>
 					<li><a href="index-3.html">issues</a></li>
-					<li><a href="index-4.html">contacts</a></li>
+					<li class="current"><a href="index-4.html">contacts</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -96,66 +90,70 @@ $(function(){
 		<div class="clear"></div>
 	</div>
 </header>
-<div id="slides">
-	<div class="slides_container">
-		<div class=""><a href="#"><img src="images/slide1.jpg" alt=""></a></div>
-		<div class=""><a href="#"><img src="images/slide2.jpg" alt=""></a></div>
-		<div class=""><a href="#"><img src="images/slide3.jpg" alt=""></a></div>
+<div class="container_12">
+	<div class="wrapper">
+		<div class="grid_12"><img src="images/2page_img1.jpg" alt="" class="img"></div>
 	</div>
 </div>
 <div class=" container_12">
 	<div class="wrapper">
 		<div class="grid_12">
-			<div class="text1">The Better Man for a Better America</div>
+			<div class="text1 pad">The Better Man for a Better America</div>
 		</div>
 	</div>
 </div>
 <!-- content -->
-<section id="content">  
+<section id="content" class="padcontent">  
 	<div class="container_12">
-		<div class="wrapper">
-			<div class="grid_4 padbot2">
-				<h2>Children</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img1.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem.</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-			<div class="grid_4 padbot2">
-				<h2>Economy</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img2.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-			<div class="grid_4 padbot2">
-				<h2>Army</h2>
-				<div class="box-img"><a href="images/image-blank.png" data-gal="prettyPhoto[gallery]" class="lightbox-image"><img src="images/1page_img3.jpg" alt=""></a></div>
-				<p class="padtop padbot">Cum sociis natoque penatibus et magnis dis parturi ent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a loremaecena</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-		</div>
-		<div class="wrapper"><div class="grid_12"><h2>Latest News</h2></div></div>
-		<div class="wrapper">
-			<div class="grid_4">
-				<ul class="list-1">
-					<li><a href="#">Lorem ipsum dolor sit amet consec</a></li>
-					<li><a href="#">Cum sociis natoque penatibus et magnis dis 
-parturient montes</a></li>
-					<li><a href="#">Osum dolor sit amet, consec tetuer</a></li>
-					<li><a href="#">Lorem ipsum dolor sit amet, consec tetuer</a></li>
-				</ul>
-				<a href="#" class="link1">all news</a>
-			</div>
-			<div class="grid_3 padtop3">
-				<div class="box-img2"><a href="images/image-blank.png" data-gal="prettyPhoto" title="" class="lightbox-image"><img src="images/1page_img4.jpg" alt=""></a></div>
-			</div>
-			<div class="grid_5 padtop3 box-right">
-				<strong class="text2">Lorem ipsum dolor sit amet consec</strong>
-				<p class="text3 padtop4">Lorem ipsum dolor sit amet, consec tetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy</p> 
-				<p class="text3">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna.</p>
-				<a href="#" class="button1">Continue reading</a>
-			</div>
-		</div>
-	</div>
+      	<div class="wrapper">
+        	<div class="grid_4">
+            	<h2>Contact Info</h2>
+                <div class="map"><iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe></div>
+                 <address class="contacts">
+					<p><strong>The Company Name Inc.</strong><br>
+					9863 - 9867 Mill Road,<br>
+					Cambridge, MG09 99HT.</p>
+					<span>Freephone:</span>+1 800 559 6580<br>
+					<span>Telephone:</span>+1 800 603 6035<br>
+					<span>FAX:</span>+1 800 889 9898<br>
+					<em class="color1">E-mail:</em> <a href="#">mail@demolink.org</a>
+                 </address>
+            </div>
+            <div class="grid_6 suffix_2">
+            	<h2>Get In Touch</h2>
+				<form id="contact-form">
+                    <div class="success"> Contact form submitted! <br><strong>We will be in touch soon.</strong></div>
+                    <fieldset>
+                        <label class="name">
+                            <input type="text" value="Name:">
+                            <span class="error">*This is not a valid name.</span>
+                            <span class="empty">*This field is required.</span>
+                            <span class="clear"></span>
+                        </label>
+                        <label class="email">
+                            <input type="text" value="E-mail:">
+                            <span class="error">*This is not a valid email address.</span>
+                            <span class="empty">*This field is required.</span>
+                            <span class="clear"></span>
+                        </label>
+                        <label class="phone">
+                            <input type="text" value="Phone:">
+                            <span class="error">*This is not a valid phone number.</span>
+                            <span class="empty">*This field is required.</span>
+                            <span class="clear"></span>
+                        </label>
+                        <label class="message">
+                            <textarea>Message:</textarea>
+                            <span class="error">*The message is too short.</span>
+                            <span class="empty">*This field is required.</span>
+                            <span class="clear"></span>
+                        </label>
+                        <div class="buttons"><span><a class="button" data-type="reset">Clear</a></span><span><a class="button" data-type="submit">submit</a></span></div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
 </section>
 <!-- footer -->
 <footer>
@@ -178,7 +176,7 @@ parturient montes</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="z2"><div class="grid_3"><div class="copyright">&copy; 2012 <a href="index-5.html">Privacy Policy</a><br> More <a rel="nofollow" href="http://www.templatemonster.com/category/political-candidate-website-templates/" target="_blank">Political Candidate Website Templates at TemplateMonster.com</a></div></div><div class="clear"></div></div>
+		<div class="z2"><div class="grid_3"><div class="copyright">&copy; 2012 <a href="index-5.html">Privacy Policy</a></div></div><div class="clear"></div></div>
 	</div>
 </footer>     
 </body>
