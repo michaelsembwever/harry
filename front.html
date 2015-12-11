@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<script src="js/jquery-1.7.1.min.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/script.js"></script>
+<script src="js/FF-cash.js"></script>
+<script src="js/jquery.prettyPhoto.js"></script>
+<script src="js/slides.min.jquery.js"></script>
+<script src="js/jquery.responsivemenu.js"></script>
+<script>
+$(function(){
+	$('#slides').slides({
+	effect: 'fade',
+	fadeSpeed:700,
+	preload: false,
+	play: 5000,
+	pause: 5000,
+	hoverPause: true,
+	crossfade: true,
+	bigTarget: true
+	});
+	$('.lightbox-image').prettyPhoto({theme:'facebook',autoplay_slideshow:false,social_tools:false,animation_speed:'normal'}).append('<span></span>');
+	if($.browser.msie&&parseInt($.browser.version,10)<=8){$('.lightbox-image').find('span').css({opacity:.5})};
+	$('.tooltips li a').find('strong').append('<span></span>').each(
+	 	function(){
+		var src=new Array()
+		src=$(this).find('>img').attr('src').split('.')
+		src=src[0]+'-hover.'+src[1]
+		$(this).find('>span').css({background:'url('+src+')'})
+	 });
+});
+</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- header -->
+<header>
+	<div class="top-header">
+		<div class="container_12">
+			<div class="grid_12">
+				<div class="fright">
+					<ul class="top-menu">
+						<li><a href="#">SUPPORT</a></li>
+></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="fleft"><a href="#"></a></div>
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="header-line"></div>
+	<div class="container_12">
+		<div class="grid_12">
+			<h1 class="fleft"><a href="index.html"></a></h1>
+		  <div id="main-menu">
+				<ul class="sf-menu fright responsive-menu">
+					<li class="current"><a href="index.html">home</a></li>
+					<li><a href="index-1.html">about</span></a><ul>
+						<li><a href="#">Political career<span class="arrow"></span></a><ul>
+									<li><a href="#">Mayor</a></li>
+									<li><a href="#">Senate</a></li>
+								</ul>
+					  </li>
+							<li><a href="#">Electorate</a></li>
+							<li><a href="#">About my state</a></li>
+						</ul>
+					</li>
+					<li><a href="index-2.html">newsroom</a></li>
+					<li><a href="index-3.html">issues</a></li>
+					<li><a href="index-4.html">contacts</a></li>
+			</ul>
+			<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</header>
+<div id="slides">
+    <div class="slides_container">    
+        <div class=""><a href="#"><img src="images/titlebox.jpg" alt""></a></div>
+		<div class=""><a href="#"><img src="images/max.jpg" alt=""></a></div>
+		<div class=""><a href="#"><img src="images/countryroad.jpg" alt=""></a></div>
+</div>
+</div>
+<div class=" container_12">
+	<div class="wrapper">
+		<div class="grid_12">
+			<div class="text1">Working Together For A Better Future</div>
+		</div>
+	</div>
+</div>
+<!-- content -->
+<section id="content">  
+	<div class="container_12">
+		<div class="wrapper">
+			<div class="grid_4 padbot2">
+				<h2>Your Support</h2>
+				<p class="padtop padbot">Dr  Harry  needs  your  support  to  become  Mayor.  It  is  time  there  is  a fresh  energy  brought to the job  of  Mayor  of  the Scenic Rim.  The  Region  needs  vision,  hard  work  and  forward thinking to  meet  it's potential.  To  value and protect our towns,  our  farms, our  natural heritage , we  need   honesty  and  commitment  to  the  people  and  the  environment of the Scenic Rim.  Your support  is very importent to me, please go to the contacts page to leave contact details  for  me to  discuss how  we can work together..</p>
+				<a href="#" class="button1">SUPPORT</a>
+			</div>
+			<div class="grid_4 padbot2">
+				<h2>Caring  For Our Region</h2>
+				
+				<p class="padtop padbot">I  am passionate  about  our   wildlife  and  our  beautiful  natural environment.  I  am  also  very  concerned  about  land use  management,  protecting  farmlands  for  future  food security.  And  I  will always be an advocate  for protecting  the  rights  and  the  values  of  our  residents.  To  this end  I  think  the  Council administration needs  to   be more transparent  and  accountable  and there  needs  to be  a change  in  the "culture"  of  the  workplace  at  Council. </p>
+				
+			</div>
+			<div class="grid_4 padbot2">
+				<h2>Growth and Planning  </h2>
+				
+				<p class="padtop padbot">The  Region  is  an area of  great natural beauty, tourism  will be  a  major  part of the  Region's  growth  and  employment opportunities.  The Bromelton transport  hub will become  a reality and  will provide  an enormous opportunity to attract  business to  the Region.  It  will only  become  a reality  if  it is  treated  as  a  project  that  is  pushed  along  with  energy  and  imagination.  Not  just  a  photo  opportunity  evry  4 years  just before election time.   Business growth  needs  to be balanced  with  good  planning,   including  protecting  farmlands,  natural habitats,  and  the amenity of  the residents affected  by development.   </a>
+		  </div>
+		</div>
+		<div class="wrapper"><div class="grid_12"><h2>About me in brief</h2></div></div>
+		<div class="wrapper">
+			<div class="grid_4">
+				<ul class="list-1">
+					<li><a href="#">With over 38 years experience in Veterinary Science, Campaigning in town planning and land use management, Teaching Environmental Sciences , Dispute Resolution in the Veterinary Industry, Small Business Practices and Pioneering Wildlife Rescue (WIRES).   </a></li>
+                    <li><a href="#">For more reading  go  to the About Dr Harry  page - currently unavailable  will be  online very soon</a></li>          
+                    <a href="#" class="button1">ABOUT DR HARRY</a>
+                    
+					
+					
+			</div>
+			<div class="grid_3 padtop3">
+				<img src="images/benchshot.jpg" alt="" class="img">
+			</div>
+			<div class="grid_5 padtop3 box-right">
+				<strong class="text2">To contact me -</strong>
+				<p class="text3 padtop4">Telephone -  0415119817</p> 
+				<p class="text3">email -  haring_wever1954@hotmail.com</p>
+				<a href="#" class="button1">Contact Page</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- footer -->
+<footer>
+	<div class="container_12">
+		<div class="wrapper z1">
+			<div class="grid_3">
+				<h1><a href="index.html"><img src="images/logoname.jpg" alt=""></a></h1>
+			</div>
+			<div class="grid_6">
+				<h6>Support us</h6>
+				<p>Dr  Harry  needs  your  support  to  become  Mayor.  It  is  time  there  is  a fresh  energy  brought to the job  of  Mayor  of  the Scenic Rim.  The  Region  needs  vision,  hard  work  and  forward thinking to  meet  it's potential.  To  value and protect our towns,  our  farms, our  natural heritage , we  need   honesty  and  commitment  to  the  people  and  the  environment of the Scenic Rim.</p>
+			</div>
+			<div class="grid_3">
+				<h6>Follow</h6>
+				<ul class="tooltips">
+					<li><a href="#" class="tooltip"><strong><img src="images/icon1.png" alt=""></strong><span>RSS</span></a></li>
+					<li><a href="#" class="tooltip"><strong><img src="images/icon3.png" alt=""></strong><span>Linkedin</span></a></li>
+					<li><a href="#" class="tooltip"><strong><img src="images/icon2.png" alt=""></strong><span>Twitter</span></a></li>
+					<li><a href="#" class="tooltip"><strong><img src="images/icon4.png" alt=""></strong><span>Facebook</span></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="z2"><div class="grid_3"><div class="copyright">&copy; 2012 <a href="index-5.html">Privacy Policy</a><br> More <a rel="nofollow" href="http://www.templatemonster.com/category/political-candidate-website-templates/" target="_blank">Political Candidate Website Templates at TemplateMonster.com</a></div></div><div class="clear"></div></div>
+	</div>
+</footer>     
+</body>
+</html>
