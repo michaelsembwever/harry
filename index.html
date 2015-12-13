@@ -16,25 +16,20 @@
 <script src="js/jquery.responsivemenu.js"></script>
 <script>
 $(function(){
+    // load subsequent slides
+    $('#slide2').show();
+    $('#slide3').show();
+    // js/slides
 	$('#slides').slides({
 	effect: 'fade',
 	fadeSpeed:700,
-	preload: false,
+	preload: true,
 	play: 5000,
 	pause: 5000,
 	hoverPause: true,
 	crossfade: true,
 	bigTarget: true
 	});
-	$('.lightbox-image').prettyPhoto({theme:'facebook',autoplay_slideshow:false,social_tools:false,animation_speed:'normal'}).append('<span></span>');
-	if($.browser.msie&&parseInt($.browser.version,10)<=8){$('.lightbox-image').find('span').css({opacity:.5})};
-	$('.tooltips li a').find('strong').append('<span></span>').each(
-	 	function(){
-		var src=new Array()
-		src=$(this).find('>img').attr('src').split('.')
-		src=src[0]+'-hover.'+src[1]
-		$(this).find('>span').css({background:'url('+src+')'})
-	 });
 });
 </script>
 <!--[if lt IE 8]>
@@ -82,9 +77,9 @@ $(function(){
 </header>
 <div id="slides">
   <div class="slides_container">
-    <div class=""><img src="images/titlebox.jpg" alt="Dr Harry, Candidate for Scenic Rim Major"></div>
-    <div class=""><img src="images/max.jpg" alt="Dr Harry and Max"></div>
-    <div class=""><img src="images/countryroad.jpg" alt="Weddings at the Old Church Boonah"></div>
+    <div id="slide1"  class=""><img src="images/titlebox.jpg" alt="Dr Harry, Candidate for Scenic Rim Major"></div>
+    <div id="slide2" style="display: none;"><img src="images/max.jpg" alt="Dr Harry and Max"></div>
+    <div id="slide3" style="display: none;"><img src="images/countryroad.jpg" alt="Weddings at the Old Church Boonah"></div>
   </div>
 </div>
 <div class=" container_12">
